@@ -14,14 +14,14 @@ pipeline {
                 sh 'python3 -m pytest'
             }
         }
-        parallel: first{
+        parallel first_stage: {
             stage("hello world"){
                 steps{
                     echo "hello world"
                 }
             }
         },
-        second{
+        second_stage: {
             stage("hello world 2"){
                 steps{
                     echo "hello world 2"
