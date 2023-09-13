@@ -14,7 +14,7 @@ pipeline {
                 sh 'python3 -m pytest'
             }
         }
-        stage("run stages in parallel){
+        stage("run stages in parallel"){
             parallel {
                 stage("hello world"){
                     steps{
