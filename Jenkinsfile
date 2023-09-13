@@ -2,7 +2,7 @@
 pipeline {
     agent {
          docker {
-             image 'python:3-alpine'
+             image 'python_with_pytest:latest'
          }
     }
     stages {
