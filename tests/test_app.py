@@ -1,4 +1,4 @@
-import app
+import ../app
 
 def test_app():
     assert app.add(2,2)==4
