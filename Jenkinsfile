@@ -14,5 +14,11 @@ pipeline {
                 sh 'python3 -m pytest'
             }
         }
+        parallel stage("hello world"){
+            echo "hello world"
+        },
+        stage("hello world 2"){
+           echo "hello world 2"
+        }
     }
 }
