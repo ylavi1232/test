@@ -15,7 +15,7 @@ pipeline {
         stage("Run tests") {
             steps {
                 echo "testing app"
-                sh 'python3 -m pytest'
+                sh 'python -m pytest'
             }
         }
         stage("run stages in parallel"){
