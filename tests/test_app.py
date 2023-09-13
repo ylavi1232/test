@@ -1,4 +1,3 @@
-import pytest
 import test.app
 
 def test_app():
